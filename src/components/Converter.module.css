@@ -1,0 +1,67 @@
+/* src/components/Converter.module.css */
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  background: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1.25rem;
+}
+
+.box input,
+.box select {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #2d3748;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.box input:focus,
+.box select:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+.box input {
+  flex: 1;
+  min-width: 120px;
+}
+
+.box select {
+  cursor: pointer;
+}
+
+.box button {
+  padding: 0.65rem 1.25rem;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.box button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Estilo específico para o botão de inverter (⇄) */
+.box button:nth-of-type(1) {
+  background-color: #edf2f7;
+  color: #4a5568;
+  padding: 0.65rem 0.9rem;
+  font-size: 1.1rem;
+  border: 1px solid #cbd5e0;
+}
+
+.box button:nth-of-type(1):hover {
+  background-color: #e2e8f0;
+}
